@@ -1,0 +1,6 @@
+{
+  "name": "Reely AI",
+  "description": "Create faceless 9:16 vertical video reels with AI scripts, consistent characters, native narration, animated captions, and music.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

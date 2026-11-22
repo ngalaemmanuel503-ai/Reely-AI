@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-accent-50: #FFF4EC;
+  --color-accent-100: #FFE4D1;
+  --color-accent-300: #FFB27A;
+  --color-accent-500: #FF6A1A;
+  --color-accent-600: #E5540A;
+  --color-accent-700: #B8420A;
+
+  --color-canvas: #FAFAF9;
+  --color-surface: #FFFFFF;
+  --color-hairline: #EAE7E3;
+  --color-ink: #1C1917;
+  --color-muted: #6B6560;
+
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-danger: #DC2626;
+  --color-info: #2563EB;
+}
+
+:root {
+  color-scheme: light;
+  --reely-accent-50: #FFF4EC;
+  --reely-accent-100: #FFE4D1;
+  --reely-accent-300: #FFB27A;
+  --reely-accent-500: #FF6A1A;
+  --reely-accent-600: #E5540A;
+  --reely-accent-700: #B8420A;
+  --reely-canvas: #FAFAF9;
+  --reely-surface: #FFFFFF;
+  --reely-border: #EAE7E3;
+  --reely-ink: #1C1917;
+  --reely-muted: #6B6560;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--reely-canvas);
+  color: var(--reely-ink);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
